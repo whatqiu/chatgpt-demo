@@ -51,7 +51,7 @@ A demo repo based on [OpenAI GPT-3.5 Turbo API.](https://platform.openai.com/doc
 
 ### Deploy With Netlify
 
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ddiu8081/chatgpt-demo#OPENAI_API_KEY=&HTTPS_PROXY=&OPENAI_API_BASE_URL=&HEAD_SCRIPTS=&SECRET_KEY=)
+[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ddiu8081/chatgpt-demo#OPENAI_API_KEY=&HTTPS_PROXY=&OPENAI_API_BASE_URL=&HEAD_SCRIPTS=&SECRET_KEY=&OPENAI_API_MODEL=)
 
 **Step-by-step deployment tutorial:**
 
@@ -62,13 +62,13 @@ A demo repo based on [OpenAI GPT-3.5 Turbo API.](https://platform.openai.com/doc
 ![image](https://cdn.staticaly.com/gh/yzh990918/static@master/20230310/image.5fhfouap270g.webp)
 
 
-2. Select the branch you want to deploy, select `feat/netlify`, and configure environment variables in the project settings.
+2. Select the branch you want to deploy, then configure environment variables in the project settings.
 
-![image](https://cdn.staticaly.com/gh/yzh990918/static@master/20230310/image.6dvtfmoijb7k.webp)
+![image](https://cdn.staticaly.com/gh/yzh990918/static@master/20230311/image.gfs9lx8c854.webp)
 
 3. Select the default build command and output directory, Click the `Deploy Site` button to start deploying the site。
 
-![image](https://cdn.staticaly.com/gh/yzh990918/static@master/20230310/image.e0n7c0zaen4.webp)
+![image](https://cdn.staticaly.com/gh/yzh990918/static@master/20230311/image.4jky9e1wbojk.webp)
 
 ### Deploy on more servers
 
@@ -87,6 +87,9 @@ You can control the website through environment variables.
 | `SECRET_KEY` | Secret string for the project. Use for generating signatures for API calls | `null` |
 | `SITE_PASSWORD` | Set password for site. If not set, site will be public | `null` |
 
+| `OPENAI_API_MODEL` | ID of the model to use. [List models](https://platform.openai.com/docs/api-reference/models/list) | `gpt-3.5-turbo` |
+
+
 ## Frequently Asked Questions
 
 Q: TypeError: fetch failed (can't connect to OpenAI Api)
@@ -96,7 +99,6 @@ A: Configure environment variables `HTTPS_PROXY`，reference: https://github.com
 Q: throw new TypeError(${context} is not a ReadableStream.)
 
 A: The Node version needs to be `v18` or later，reference: https://github.com/ddiu8081/chatgpt-demo/issues/65
-
 ## Creative Variant Versions
 
 - [ourongxing/chatgpt-vercel](https://github.com/ourongxing/chatgpt-vercel)
