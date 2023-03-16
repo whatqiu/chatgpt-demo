@@ -49,7 +49,7 @@
 
 ### 部署在 Netlify
 
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ddiu8081/chatgpt-demo#OPENAI_API_KEY=&HTTPS_PROXY=&OPENAI_API_BASE_URL=&HEAD_SCRIPTS=&SECRET_KEY=)
+[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ddiu8081/chatgpt-demo#OPENAI_API_KEY=&HTTPS_PROXY=&OPENAI_API_BASE_URL=&HEAD_SCRIPTS=&SECRET_KEY=&OPENAI_API_MODEL=)
 
 **分步部署教程：**
 
@@ -84,6 +84,7 @@
 | `HEAD_SCRIPTS` | 在页面的 `</head>` 之前注入分析或其他脚本 | `null` |
 | `SECRET_KEY` | 项目的秘密字符串。用于生成 API 调用的签名 | `null` |
 | `SITE_PASSWORD` | 为网站设置密码。如果未设置，则该网站将是公开的 | `null` |
+| `OPENAI_API_MODEL` | 使用的 OpenAI 模型. [模型列表](https://platform.openai.com/docs/api-reference/models/list) | `gpt-3.5-turbo` |
 
 ## 常见问题
 
@@ -94,10 +95,6 @@ A: 配置环境变量 `HTTPS_PROXY`，参考: https://github.com/ddiu8081/chatgp
 Q: throw new TypeError(${context} is not a ReadableStream.)
 
 A: Node 版本需要在 `v18` 或者更高，参考: https://github.com/ddiu8081/chatgpt-demo/issues/65
-
-## 创意变体版本
-
-- [ourongxing/chatgpt-vercel](https://github.com/ourongxing/chatgpt-vercel)
 
 ## 参与贡献
 
