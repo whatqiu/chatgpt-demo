@@ -208,7 +208,7 @@ export default () => {
           </div>
         )}
       >
-        <div class="gen-text-wrapper sticky bottom-4" class:op-50={systemRoleEditing()}>
+        <div class="gen-text-wrapper fixed bottom-4" class:op-50={systemRoleEditing()}>
           <textarea
             ref={inputRef!}
             disabled={systemRoleEditing()}
